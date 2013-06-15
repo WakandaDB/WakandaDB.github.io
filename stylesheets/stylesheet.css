@@ -60,7 +60,8 @@ a {
   color: #d5000d;
 }
 a:hover {
-  color: #c5000c;
+    color: #c5000c;
+    text-align: center;
 }
 
 header {
@@ -167,6 +168,11 @@ a.button span {
 
 #download-wakanda span {
   background: transparent url(../images/wakanda-icon.png) 12px 50% no-repeat;
+}
+
+#play-wakanda span {
+  width: 109px;
+  background: transparent url(../images/play-icon.png) 12px 50% no-repeat;
 }
 
 code, pre {
