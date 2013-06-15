@@ -39,31 +39,24 @@
 <a name="REST-Example" class="anchor" href="#REST-Example"><span class="octicon octicon-link"></span></a>Server-Side JavaScript Example</h3>
 
 <p>SSJS Query
-<pre><code>
-var country = ds.Country(1);
-</code></pre>
+<pre><code>var country = ds.Country(1);</code></pre>
 
 Result
-<pre><code>
-{
+<pre><code>{
 	ID: 1,
 	name: "France",
 	code2Chars: "fr",
 	companies: CompanyCollection()
-}
-</code></pre>
+}</code></pre>
 </p>
           <h3>
 <a name="REST-Example" class="anchor" href="#REST-Example"><span class="octicon octicon-link"></span></a>REST Example</h3>
 
 <p>REST Request
-<pre><code>
-GET /rest/Country(1)
-</code></pre>
+<pre><code>GET /rest/Country(1)</code></pre>
 
 JSON Response
-<pre><code>
-{
+<pre><code>{
 	__entityModel: "Country",
 	__KEY: "1",
 	__STAMP: 1,
@@ -75,10 +68,9 @@ JSON Response
 			uri: "/rest/Country(1)/companies?$expand=companies"
 		}
 	}
-}
-</code></pre>
+}</code></pre>
 </p>
-        </section>
+</section>
 
         <footer>
           Copyright © 2013 4D - All rights reserved<a href="http://twitter.com/jasonlong"></a>.
