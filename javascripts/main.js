@@ -14,6 +14,7 @@ window.addEventListener('load', function() {
 			currentTab.style.display = 'none';
 			tab.style.display = 'block';
 			currentTab = tab;
+			return false;
 		});
 	});
 });
