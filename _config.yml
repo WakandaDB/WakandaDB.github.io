@@ -1,0 +1,20 @@
+
+permalink: date
+pygments: true
+exclude: ['README.md', 'config.rb', 'params.json', 'Rakefile']
+markdown: rdiscount
+
+
+domain: wakandaDB.org
+title: WakandaDB
+authors: 4D Inc
+email: wakanda@wakanda.org
+
+github:
+  username: wakandaDB
+
+# google_analytics:
+#   account: UA-XXXXX-X
+
+# disqus:
+#   id: disqusid

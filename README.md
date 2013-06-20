@@ -12,3 +12,17 @@ The REST API of WakandaDB make it a very accessible Database from any environmen
 ##Contributing##
 
 If you want to crontribute to this Website, suggesting code examples of WakandaDB access from any framework, platform, or tool, or suggesting to references some modules or applications using WakandaDB or usable from WakandaDB, feel free to create an issue, send a pull request, or contact us directly at <a href="mailto:lyle@wakanda.org">lyle@wakanda.org</a> and <a href="mailto:alex@wakanda.org">alex@wakanda.org</a>
+
+
+
+## Installing a Dev version of Site
+
+We are using Jekyll, Less, Pygments, Markdown
+
+* Pygments for code highlighting...
+
+Assuming you have python installed with `easy_install` available:
+
+    sudo easy_install Pygments
+
+
