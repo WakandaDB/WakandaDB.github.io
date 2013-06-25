@@ -61,6 +61,7 @@
           <p>{{page.description}}</p>
         </header>
         <div class="row">
+          {% if site.posts.length > 0 %}
           <div id="content" class="span9">
             <section id="main_content">
             {{ content }}
@@ -74,6 +75,17 @@
               {% endfor %}
             </div>
           </nav>
+          {% else %}
+
+          <div id="content" class="span12">
+            <section id="main_content">
+            {{ content }}
+            </section><!-- main_content -->
+          </div>
+          
+          {% endif %}
+          
+          
         </div>
       </div>
 
