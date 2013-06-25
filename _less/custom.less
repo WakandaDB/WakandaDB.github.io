@@ -29,12 +29,20 @@ body {
 /* Page header tweaks */
 .page-header {
   background-color: @white;
-  padding: 20px 20px 10px;
+  padding: 2em 0px 10px;
   margin: -20px -20px 20px;
   .border-radius(6px);
   background-image: url(http://wakandadb.org/images/highlight-bg.jpg);
   background-position: bottom center;
   border:none;
+  .makeRow();
+  .title{
+    .makeColumn(4);
+    text-align:center;
+  }
+  .description{
+    .makeColumn(8);
+  }
 }
 
 /* Give a quick and non-cross-browser friendly divider */
@@ -51,10 +59,21 @@ body {
 ul.nav-tabs {
   margin-bottom:0px;
 }
+.nav-tabs {
+  border-bottom: 1px solid @grayLight;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  border: 1px solid @grayLight;
+  border-bottom-color:transparent;
+}
 .tab-pane {
   padding:1em;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid @grayLight;
+  border-top: none;
   background-color: @white;
+  .border-radius(0px 0px 10px 10px);
+}
+hr {
+  color: @gray;
 }
