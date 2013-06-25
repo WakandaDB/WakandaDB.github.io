@@ -37,25 +37,17 @@ Person.addAttribute("company", "relatedEntity",
   collectionName: "Companies",
   scope: "public",
   attributes:[
-  { name: "ID",
-    autosequence: true,
-    kind: "storage",
-    primKey: true,
-    scope: "public",
-    type: "long",
+  { name: "ID", autosequence: true,
+    kind: "storage", primKey: true,
+    scope: "public", type: "long",
     unique: true
   },{
-    name: "name", 
-    kind: "storage", 
-    scope: "public", 
-    type: "string"
+    name: "name", kind: "storage", 
+    scope: "public", type: "string"
   },{
-    kind: "relatedEntities", 
-    name: "employees",
-    reversePath: true,
-    path: "company",
-    scope: "public",
-    type: "Person"
+    kind: "relatedEntities", name: "employees",
+    reversePath: true, path: "company",
+    scope: "public", type: "Person"
   }]
 }
 {% endhighlight %}
