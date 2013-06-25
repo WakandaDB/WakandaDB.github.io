@@ -19,8 +19,8 @@ description: WakandaDB is an <strong>Open Source Model-driven NoSQL database eng
 {% highlight javascript %}
 model = new DataStoreCatalog();
 var Person = model.addClass("Person", "People");
-Person.addAttribute("firstName", "storage", "string");
-Person.addAttribute("lastName", "storage", "string");
+Person.addAttribute("firstName","storage","string");
+Person.addAttribute("lastName" ,"storage","string");
 Person.addAttribute("name", "calculated", "string");
 Person.name.onGet = function()
 {
