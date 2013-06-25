@@ -24,7 +24,7 @@ Person.addAttribute("lastName" ,"storage","string");
 Person.addAttribute("name", "calculated", "string");
 Person.name.onGet = function()
 {
-  return this.firstName + ' ' this.lastName;
+  return this.firstName + ' ' + this.lastName;
 }
 Person.addAttribute("company", "relatedEntity",
       "Company", "Companies");
