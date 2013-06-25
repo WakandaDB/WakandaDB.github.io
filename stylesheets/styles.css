@@ -645,3 +645,7 @@ ul.nav-tabs{margin-bottom:0px;}
 .nav-tabs>.active>a,.nav-tabs>.active>a:hover{border:1px solid #999999;border-bottom-color:transparent;}
 .tab-pane{padding:1em;border:1px solid #999999;border-top:none;background-color:#ffffff;-webkit-border-radius:0px 0px 10px 10px;-moz-border-radius:0px 0px 10px 10px;border-radius:0px 0px 10px 10px;}
 hr{color:#555555;}
+#introduction{margin-left:-20px;*zoom:1;}#introduction:before,#introduction:after{display:table;content:"";}
+#introduction:after{clear:both;}
+#introduction #exampleModel{float:left;margin-left:20px;width:540px;}
+#introduction #learnAbout{float:left;margin-left:20px;width:380px;}

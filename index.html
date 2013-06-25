@@ -5,14 +5,82 @@ description: WakandaDB is an <strong>Open Source Model-driven NoSQL database eng
             <strong>server-side processing and querying are all done in JavaScript</strong>.
 ---
 
-
-        <!-- Play -->
-        <section id="Play">
-          <h3> <a name="Play-Wakanda" class="anchor" href="#Play-Wakanda"><span class="octicon octicon-link">Play with Wakanda</span></a></h3>
-          <p>Try Wakanda Server-Side JavaScript in Live from “Play"</p>
-          <p class="clearfix"><a href="http://play.wakanda.org/" id="play-wakanda" class="button"><span>"Play"</span></a></p>
-        </section><!-- /Play -->
-
+        <section id="introduction">
+          <section id="exampleModel">
+            <h3>Define a Data Model in JSON or JavaScript</h3>
+            <nav>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#modelInJavaScript">via JavaScript</a></li>
+              <li><a href="#modelInJSON">via JSON</a></li>
+            </ul>
+            </nav>
+            <div class="tab-content">            
+              <div id="modelInJavaScript" class="tab-pane fade in active">
+{% highlight javascript %}
+model = new DataStoreCatalog();
+var Person = model.addClass("Person", "People");
+Person.addAttribute("firstName", "storage", "string");
+Person.addAttribute("lastName", "storage", "string");
+Person.addAttribute("name", "calculated", "string");
+Person.name.onGet = function()
+{
+  return this.firstName + ' ' this.lastName;
+}
+Person.addAttribute("company", "relatedEntity",
+      "Company", "Companies");
+{% endhighlight %}
+              </div>
+              <div id="modelInJSON" class="tab-pane fade">
+{% highlight javascript %}
+{ name: "Company",
+  className: "Company",
+  collectionName": "Companies",
+  scope: "public"
+  attributes:[
+  { "name": "ID",
+    "autosequence": true,
+    "kind": "storage",
+    "primKey": true,
+    "scope": "public",
+    "type": "long",
+    "unique": true
+  },{
+    "name": "name", 
+    "kind": "storage", 
+    "scope": "public", 
+    "type": "string"
+  },{
+    "kind": "relatedEntities", 
+    "name": "employees",
+    "reversePath": true,
+    "path": "company",
+    "scope": "public",
+    "type": "Person"
+  }
+}
+{% endhighlight %}
+              </div>
+            </div>
+          </section>
+          <!-- Play -->
+          <section id="learnAbout">
+              <div>
+                <h3>Play with WakandaDB</h3>
+                <p>We created <a href="http://play.wakanda.org/" target="playWakanda" class="button">play.wakanda.org</a> so that you can try out our SSJS database right from your browser.</p>
+              </div>
+              <hr />
+              <div>
+                <h3>Download WakandaDB</h3>
+                <p>You can <a href="http://wakanda.org/download">download wakandaDB</a> and run it on Linux, OS X, or Windows.</p>
+              </div>
+              <hr />
+              <div>
+                <h3>Documentation</h3>
+                <p>We our quite proud of our <a href="http://doc.wakanda.org">extensive Wakanda documentation</a>.</p>
+              </div>
+          </section>
+          <!-- /Play -->
+        </section>
         <hr>
 
         <!-- Native Examples -->
