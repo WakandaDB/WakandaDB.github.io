@@ -88,10 +88,10 @@ var country = ds.Country(1);
             <div class="tab-pane fade in active" id="Universal-Ajax-Connector" aria-selected="true" aria-labeledby="tabNavUniversalAjax">
               <h4> <a name="Universal-Ajax-Connector" class="anchor" href="#Universal-Ajax-Connector"><span class="octicon octicon-link">Generic "Ajax"</span></a></h4>
               <p>
-                Wakanda provides an universal Ajax driver able to provide a proxy of the model in 
+                Wakanda provides a universal Ajax driver able to provide a proxy of the model in 
                 any browser. It is composed of a "<strong>data provider</strong>" and a 
                 "<strong>data source</strong>". The data provider is useful to provide data binding
-                to any raw javascript application or to any existing Ajax Framework. The data source
+                to any raw JavaScript application or to any existing Ajax Framework. The data source
                 layer provides a "Publish/Subscribe" mechanism (aka Observer) for any element using
                 them (widgets, other datasources, ...) 
               </p>
@@ -114,7 +114,7 @@ var myset = ds.Person.query("ID > 100 and ID < 300", {
                 <li>data source: <a href="http://doc.wakanda.org/Datasource/Datasource.100-606948.en.html">documentation</a> | <a href="https://github.com/Wakanda/WAF/tree/master/DataSource">source</a>
                 <li>project with few examples: <a href="http://www.youtube.com/watch?v=rLW2r0Qu79U#t=0:36:00">video demo</a> | <a href="https://github.com/rmello4d/NoWaf/archive/master.zip">download</a> | <a href="https://github.com/rmello4d/NoWaf/tree/master/NoWaf/NoWaf/WebFolder">sources</a>
               </ul></p>
-            </div><!-- tabpanel -->
+            </div><!-- Ajax -->
 
             <!-- Angular -->
             <div class="tab-pane fade" id="Angular-Connector" aria-selected="false">
@@ -205,14 +205,14 @@ todo.factory('Item', function(wakandaResource) {
               <p>more informations:<ul>
                 <li>ng-todo Wakanda branch: <a href="https://github.com/vojtajina/ng-todo/tree/wakanda">source</a>
               </ul></p>
-            </div><!-- tabpanel -->
+            </div><!-- Angular -->
 
             <!-- Sencha -->
             <div class="tab-pane fade" id="Sencha-Connector" aria-selected="false">
               <h4> <a name="Sencha-Connector" class="anchor" href="#Sencha-Connector"><span class="octicon octicon-link">Sencha-Wakanda</span></a></h4>
               <p>
-                First presented during Wakanday 2011, a Sencha Wakanda proxy was realized by a
-                french company called revolunet. It is using directly the REST API.
+                First presented during Wakanday 2011, a Sencha Wakanda proxy was realized by the
+                french company <a href="http://www.revolunet.com">revolunet</a>. This Sencha Wakanda proxy uses the built in Wakanda REST API directly.
               </p>
               <p>
                 Example
