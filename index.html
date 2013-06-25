@@ -34,29 +34,29 @@ Person.addAttribute("company", "relatedEntity",
 {% highlight javascript %}
 { name: "Company",
   className: "Company",
-  collectionName": "Companies",
-  scope: "public"
+  collectionName: "Companies",
+  scope: "public",
   attributes:[
-  { "name": "ID",
-    "autosequence": true,
-    "kind": "storage",
-    "primKey": true,
-    "scope": "public",
-    "type": "long",
-    "unique": true
+  { name: "ID",
+    autosequence: true,
+    kind: "storage",
+    primKey: true,
+    scope: "public",
+    type: "long",
+    unique: true
   },{
-    "name": "name", 
-    "kind": "storage", 
-    "scope": "public", 
-    "type": "string"
+    name: "name", 
+    kind: "storage", 
+    scope: "public", 
+    type: "string"
   },{
-    "kind": "relatedEntities", 
-    "name": "employees",
-    "reversePath": true,
-    "path": "company",
-    "scope": "public",
-    "type": "Person"
-  }
+    kind: "relatedEntities", 
+    name: "employees",
+    reversePath: true,
+    path: "company",
+    scope: "public",
+    type: "Person"
+  }]
 }
 {% endhighlight %}
               </div>
