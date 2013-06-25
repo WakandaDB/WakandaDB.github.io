@@ -7,11 +7,12 @@ markdown: rdiscount
 
 domain: wakandaDB.org
 title: WakandaDB
+subtitle: JS.everywhere(&nbsp;)
 authors: 4D Inc
 email: wakanda@wakanda.org
 
 github:
-  username: wakandaDB
+  username: wakanda
 
 # google_analytics:
 #   account: UA-XXXXX-X

@@ -17,6 +17,12 @@ If you want to crontribute to this Website, suggesting code examples of WakandaD
 
 ## Installing a Dev version of Site
 
+Start by installing the following....
+
+* Ruby (v1.9.2 or higher)
+* RubyGems (v1.8.24 or higher)
+* Bundler (v1.2.0.pre.1 or higher)
+
 We are using Jekyll, Less, Pygments, Markdown
 
 * Pygments for code highlighting...
@@ -26,3 +32,27 @@ Assuming you have python installed with `easy_install` available:
     sudo easy_install Pygments
 
 
+* Set up Bundler to get gems and such
+
+Bundler will install the gems that are in the Gemfile
+And put them in a sub folder (not in repo)
+
+    bundle install --path _vendor/bundle
+    
+Then to install all the gems in the Gemfile run
+
+    bundle install
+    
+
+## Rake deploy task
+
+The following tasks are available (use `rake -T` to list them):
+
+    rake build        # Build site with Jekyll
+    rake check_links  # Check links for site already running on localhost:4000
+    rake clean        # Clean up generated site
+    rake deploy       # Build and deploy
+    rake server       # Start server with --auto
+
+The deploy task is simplistic and uses rsync to copy the generated site to your server.  You will need to replace the username, servername and path as appropriate.
+But we are not needing to do that because Github is taking care of that.
