@@ -1,5 +1,5 @@
 @shadow: 0 1px 2px rgba(0,0,0,.15); 
-
+@containerBackground: rgb(231, 231, 231);
 
 /* Copied from bootstrap examples and modified */
 /* Override some defaults */
@@ -19,8 +19,7 @@ body {
 
 /* The white background content wrapper */
 .container > .content {
-  background-color: rgb(231, 231, 231);
-  background-image: url(http://wakandadb.org/images/body-bg.png);
+  background-color: @containerBackground;
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
   .border-radius(6px);
@@ -32,13 +31,21 @@ body {
   padding: 2em 0px 10px;
   margin: -20px -20px 20px;
   .border-radius(6px);
-  background-image: url(http://wakandadb.org/images/highlight-bg.jpg);
+  
+  .box-shadow(inset -600px -30px 60px 0px @containerBackground);
   background-position: bottom center;
   border:none;
   .makeRow();
   .title{
     .makeColumn(4);
     text-align:center;
+    h1{
+      overflow:hidden;
+      width:300px;
+      height:50px;
+      text-indent:397px;
+      background-image: url(/images/wakandaDB_300x50.png);
+    }
   }
   .description{
     .makeColumn(8);

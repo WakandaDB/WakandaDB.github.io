@@ -1,8 +1,8 @@
 ---
 layout: default
 description: WakandaDB is an <strong>Open Source Model-driven NoSQL database engine</strong> with a 
-            comprehensive <strong>REST web interface</strong>. The database schema definition, 
-            <strong>server-side processing and querying are all done in JavaScript</strong>.
+            comprehensive <strong>REST web interface</strong>. The database schema, 
+            server-side processing, and querying are all done in <strong>JavaScript</strong>.
 ---
 
         <section id="introduction">
@@ -88,7 +88,7 @@ Person.addAttribute("company", "relatedEntity",
 
             <!-- SSJS -->
             <div class="tab-pane fade in active" id="SSJS-Example" aria-selected="true"  aria-labeledby="tabSSJS">
-              <h4> <a name="SSJS-Example" class="anchor" href="#SSJS-Example"><span class="octicon octicon-link">Server-Side JavaScript</span></a></h4>
+              <h4>Server-Side JavaScript</h4>
               <p>
                 SSJS Query
 {% highlight javascript %}
@@ -107,7 +107,7 @@ var country = ds.Country(1);
 
             <!-- REST -->
             <div class="tab-pane fade" id="REST-Example" aria-selected="false">
-              <h4> <a name="REST-Example" class="anchor" href="#REST-Example"><span class="octicon octicon-link">REST</span></a></h4>
+              <h4>REST</h4>
               <p>
                 REST Request
                 {% highlight javascript %}GET /rest/Country(1){% endhighlight %}
@@ -146,7 +146,7 @@ var country = ds.Country(1);
           <div class="tab-content">
             <!-- Ajax -->
             <div class="tab-pane fade in active" id="Universal-Ajax-Connector" aria-selected="true" aria-labeledby="tabNavUniversalAjax">
-              <h4> <a name="Universal-Ajax-Connector" class="anchor" href="#Universal-Ajax-Connector"><span class="octicon octicon-link">Generic "Ajax"</span></a></h4>
+              <h4>Generic "Ajax"</h4>
               <p>
                 Wakanda provides a universal Ajax driver able to provide a proxy of the model in 
                 any browser. It is composed of a "<strong>data provider</strong>" and a 
@@ -178,7 +178,7 @@ var myset = ds.Person.query("ID > 100 and ID < 300", {
 
             <!-- Angular -->
             <div class="tab-pane fade" id="Angular-Connector" aria-selected="false">
-              <h4> <a name="Angular-Connector" class="anchor" href="#Angular-Connector"><span class="octicon octicon-link">Angular Wakanda resource</span></a></h4>
+              <h4>Angular Wakanda resource</h4>
               <p>
                 Vojta Jina from Google went to present AngularJS at Wakanday Europe 2012. He 
                 made at this occasion a Wakanda version of its ng-todo demo application using a
@@ -269,7 +269,7 @@ todo.factory('Item', function(wakandaResource) {
 
             <!-- Sencha -->
             <div class="tab-pane fade" id="Sencha-Connector" aria-selected="false">
-              <h4> <a name="Sencha-Connector" class="anchor" href="#Sencha-Connector"><span class="octicon octicon-link">Sencha-Wakanda</span></a></h4>
+              <h4>Sencha-Wakanda</h4>
               <p>
                 First presented during Wakanday 2011, a Sencha Wakanda proxy was realized by the
                 french company <a href="http://www.revolunet.com">revolunet</a>. This Sencha Wakanda proxy uses the built in Wakanda REST API directly.

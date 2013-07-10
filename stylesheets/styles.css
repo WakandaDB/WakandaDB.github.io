@@ -633,10 +633,10 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 html,body{background-color:#3f3f3f;}
 body{padding-top:40px;font-weight:300;}
 .container>footer p{text-align:center;}
-.container>.content{background-color:#e7e7e7;background-image:url(http://wakandadb.org/images/body-bg.png);padding:20px;margin:0 -20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
-.page-header{background-color:#ffffff;padding:2em 0px 10px;margin:-20px -20px 20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;background-image:url(http://wakandadb.org/images/highlight-bg.jpg);background-position:bottom center;border:none;margin-left:-20px;*zoom:1;}.page-header:before,.page-header:after{display:table;content:"";}
+.container>.content{background-color:#e7e7e7;padding:20px;margin:0 -20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
+.page-header{background-color:#ffffff;padding:2em 0px 10px;margin:-20px -20px 20px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:inset -600px -30px 60px 0px #e7e7e7;-moz-box-shadow:inset -600px -30px 60px 0px #e7e7e7;box-shadow:inset -600px -30px 60px 0px #e7e7e7;background-position:bottom center;border:none;margin-left:-20px;*zoom:1;}.page-header:before,.page-header:after{display:table;content:"";}
 .page-header:after{clear:both;}
-.page-header .title{float:left;margin-left:20px;width:300px;text-align:center;}
+.page-header .title{float:left;margin-left:20px;width:300px;text-align:center;}.page-header .title h1{overflow:hidden;width:300px;height:50px;text-indent:397px;background-image:url(/images/wakandaDB_300x50.png);}
 .page-header .description{float:left;margin-left:20px;width:620px;}
 .content .span4{margin-left:0;padding-left:19px;border-left:1px solid #eee;}
 .topbar .btn{border:0;}
