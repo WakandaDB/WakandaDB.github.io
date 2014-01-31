@@ -11,7 +11,7 @@ The REST API of WakandaDB makes it a very accessible Database from any environme
 
 ##Contributing##
 
-If you want to crontribute to this Website, suggesting code examples of WakandaDB access from any framework, platform, or tool, or suggesting to references some modules or applications using WakandaDB or usable from WakandaDB, feel free to create an issue, send a pull request, or contact us directly at <a href="mailto:lyle@wakanda.org">lyle@wakanda.org</a> and <a href="mailto:alex@wakanda.org">alex@wakanda.org</a>
+If you want to crontribute to this Website, suggesting code examples of WakandaDB access from any framework, platform, or tool, or suggesting to references some modules or applications using WakandaDB or usable from WakandaDB, feel free to create an issue, send a pull request, or contact us directly at <a href="http://github.com/lyle">@lyle</a> and <a href="mailto:alex@wakanda.org">alex@wakanda.org</a>
 
 
 ## Installing a Dev version of this Site
