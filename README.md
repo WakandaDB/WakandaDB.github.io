@@ -2,20 +2,19 @@
 ===================
 
 ##About##
-This repository is the one for the <a href="http://wakandadb.org">wakandadb.org</a> website presenting the **WakandaDB Model-driven NoSQL engine**. This website using Github page, you can also reach it from <a href="http://wakandadb.github.io">wakandadb.github.io</a>.
+This repository builds the <a href="http://wakandadb.org">wakandadb.org</a> website presenting the **WakandaDB Model-driven NoSQL engine**. This website is using Github pages, you can also reach it from <a href="http://wakandadb.github.io">wakandadb.github.io</a>.
 
-WakandaDB provides a native **REST API** to access to interconnected DataClasses defined in **Server-Side JavaScript**.
-WakandaDB is also the core of Wakanda Server for which are available a dedicated, but not mandatory, Ajax Framework, and a dedicated IDE. You can find more informations about them on <a href="http://wakanda.org">wakanda.org</a>.
+WakandaDB provides a native **REST API** to access interconnected DataClasses defined in **Server-Side JavaScript**.
+WakandaDB is the server within Wakanda which includes a deticated, but not mandatory, Ajax Framework, and a dedicated IDE. You can find more informations about them on <a href="http://wakanda.org">wakanda.org</a>.
 
-The REST API of WakandaDB make it a very accessible Database from any environment supporting HTTP, meaning either from Server Languages (PHP, Java, .NET, …), Browser frameworks (Backbone.js, Angular, Dojo, Sencha, …), or Native Mobile Client (iOS, Android, Windows Phone, ...)
+The REST API of WakandaDB makes it a very accessible Database from any environment supporting HTTP, meaning either from Server Languages (PHP, Java, .NET, …), Browser frameworks (Backbone.js, Angular, Dojo, Sencha, …), or Native Mobile Clients (iOS, Android, Windows Phone, ...)
 
 ##Contributing##
 
-If you want to crontribute to this Website, suggesting code examples of WakandaDB access from any framework, platform, or tool, or suggesting to references some modules or applications using WakandaDB or usable from WakandaDB, feel free to create an issue, send a pull request, or contact us directly at <a href="mailto:lyle@wakanda.org">lyle@wakanda.org</a> and <a href="mailto:alex@wakanda.org">alex@wakanda.org</a>
+If you want to crontribute to this Website, suggesting code examples of WakandaDB access from any framework, platform, or tool, or suggesting to references some modules or applications using WakandaDB or usable from WakandaDB, feel free to create an issue, send a pull request, or contact us directly at <a href="http://github.com/lyle">@lyle</a> and <a href="mailto:alex@wakanda.org">alex@wakanda.org</a>
 
 
-
-## Installing a Dev version of Site
+## Installing a Dev version of this Site
 
 Start by installing the following....
 
@@ -30,7 +29,6 @@ We are using Jekyll, Less, Pygments, Markdown
 Assuming you have python installed with `easy_install` available:
 
     sudo easy_install Pygments
-
 
 * Set up Bundler to get gems and such
 
@@ -54,5 +52,4 @@ The following tasks are available (use `rake -T` to list them):
     rake deploy       # Build and deploy
     rake server       # Start server with --auto
 
-The deploy task is simplistic and uses rsync to copy the generated site to your server.  You will need to replace the username, servername and path as appropriate.
-But we are not needing to do that because Github is taking care of that.
+The deploy task is simplistic and uses rsync to copy the generated site to your server.  You will need to replace the username, servername and path as appropriate. For this site we do not deploy, because we are using Github pages which does the build for us.

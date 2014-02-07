@@ -14,8 +14,8 @@ email: wakanda@wakanda.org
 github:
   username: wakanda
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+   account: UA-43540360-1
 
 # disqus:
 #   id: disqusid
